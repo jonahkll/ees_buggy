@@ -29,6 +29,20 @@ void signalHandler(int signum) {
     exit(signum);
 }
 
+MPU6050 device(0x68, true);
+
+void calculateOffset(float *ax, float *ay, float *az, float *gr, float *gp,
+                     float *gy) {
+    // Calculate the offsets
+    std::cout
+        << "Calculating the offsets...\n    Please keep the accelerometer "
+           "level and still\n    This could take a couple ofminutes...";
+    device.getOffsets(ax, ay, az, gr, gp, gy);
+    std::cout << "Gyroscope R,P,Y: " << *gr << "," << *gp << "," << *gy
+              << "\nAccelerometer X,Y,Z: " << *ax << "," << *ay << "," << *az
+              << "\n";
+}
+
 int main() {
     // Csignal für Abbruch über STRG-C
     signal(SIGINT, signalHandler);
@@ -44,38 +58,37 @@ int main() {
     // Initialisierung der Start-Distanz
     double distance = measureDistance(TRIGGER_PIN, ECHO_PIN);
 
-    MPU6050Driver mpu6050;
+    float ax, ay, az, gr, gp,
+        gy; // Variables to store the accel, gyro and angle values
 
-    float accelX = 0, accelY = 0, accelZ = 0, gyroX = 0, gyroY = 0, gyroZ = 0;
-    float ax_off, ay_off, az_off, gr_off, gp_off, gy_off;
-    float angleX, angleY, angleZ;
+    sleep(1); // Wait for the MPU6050 to stabilize
 
-    // Buggy fährt so lange gerade aus bis ein Obstacle erkannt wird und weicht
-    // diesem dann aus
+    // calculateOffset(&ax, &ay, &az, &gr, &gp, &gy);
+
+    // Read the current yaw angle
+    device.calc_yaw = true;
+
     while (1) {
-        mpu6050.getOffsets(&ax_off, &ay_off, &az_off, &gr_off, &gp_off,
-                           &gy_off);
-        printf(
-            "ax_off: %.4f, ay_off: %.4f, az_off: %.4f, gr_off: %.4f, gp_off: "
-            "%.4f, gy_off: %.4f\n",
-            ax_off, ay_off, az_off, gr_off, gp_off, gy_off);
 
-        // driveForward(100);
+        driveForward(100);
         while (1) {
-            // Auslesen der Beschleunigungswerte
-            mpu6050.getAccel(&accelX, &accelY, &accelZ);
-            printf("Beschleunigung X: %.4f, Y: %.4f, Z: %.4f\n", accelX, accelY,
-                   accelZ);
+            // Get the current accelerometer values
+            device.getAccel(&ax, &ay, &az);
+            std::cout << "Accelerometer Readings: X: " << ax << ", Y: " << ay
+                      << ", Z: " << az << "\n";
 
-            // Read the gyroscope values
-            mpu6050.getGyro(&gyroX, &gyroY, &gyroZ);
-            printf("Gyroscope X: %.4f, Y: %.4f, Z: %.4f\n", gyroX, gyroY,
-                   gyroZ);
+            // Get the current gyroscope values
+            device.getGyro(&gr, &gp, &gy);
+            std::cout << "Gyroscope Readings: X: " << gr << ", Y: " << gp
+                      << ", Z: " << gy << "\n";
 
-            mpu6050.getAngle(0, &angleX);
-            mpu6050.getAngle(1, &angleY);
-            mpu6050.getAngle(2, &angleZ);
-            printf("Angle X: %.4f, Y: %.4f, Z: %.4f\n", angleX, angleY, angleZ);
+            device.getAngle(0, &gr);
+            device.getAngle(1, &gp);
+            device.getAngle(2, &gy);
+            std::cout << "Current angle around the roll axis: " << gr << "\n";
+            std::cout << "Current angle around the pitch axis: " << gp << "\n";
+            std::cout << "Current angle around the yaw axis: " << gy << "\n";
+            usleep(250000); // 0.25sec
 
             delay(1000);
         }

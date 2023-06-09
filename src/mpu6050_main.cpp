@@ -5,7 +5,7 @@
 // Example code
 
 #include "buggy_driver.h"
-#include "mpu6050_test.h"
+#include "mpu6050_driver.h"
 #include <signal.h>
 
 MPU6050 device(0x68, true);

@@ -1,3 +1,4 @@
 /home/pi/buggy/build/CMakeFiles/rebuild_cache.dir
 /home/pi/buggy/build/CMakeFiles/edit_cache.dir
-/home/pi/buggy/build/CMakeFiles/buggy.exe.dir
+/home/pi/buggy/build/CMakeFiles/a3.exe.dir
+/home/pi/buggy/build/CMakeFiles/a2.exe.dir

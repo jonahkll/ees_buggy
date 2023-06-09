@@ -9,9 +9,16 @@ include_directories(include)
 include_directories(include/adafruit-motor-hat-cpp-library)
 
 # Source files
-file(GLOB_RECURSE SOURCES
+file(GLOB_RECURSE SOURCES_A2
     src/main_a2.cpp
     src/buggy_driver.cpp
+    src/adafruit-motor-hat-cpp-library/*.cpp
+)
+
+file(GLOB_RECURSE SOURCES_A3
+    src/main_a3.cpp
+    src/buggy_driver.cpp
+    src/mpu6050_driver.cpp
     src/adafruit-motor-hat-cpp-library/*.cpp
 )
 
@@ -34,10 +41,13 @@ find_library(WIRINGPI_LIB wiringPi)
 find_library(PTHREAD_LIB pthread)
 
 # Add executable
-add_executable(buggy.exe ${SOURCES})
+add_executable(a2.exe ${SOURCES_A2})
+add_executable(a3.exe ${SOURCES_A3})
+
 
 # Link external libraries
-target_link_libraries(buggy.exe ${WIRINGPI_LIB} ${PTHREAD_LIB})
+target_link_libraries(a2.exe ${WIRINGPI_LIB} ${PTHREAD_LIB})
+target_link_libraries(a3.exe ${WIRINGPI_LIB} ${PTHREAD_LIB})
 
 # Set the output directory to the build directory
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)

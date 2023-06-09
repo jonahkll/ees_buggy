@@ -1,4 +1,6 @@
-#pragma once
+//-------------------------------MPU6050 Accelerometer and Gyroscope C++
+// library----------------------------- Copyright (c) 2019, Alex Mous Licensed
+// under the CC BY-NC SA 4.0
 
 //-----------------------MODIFY THESE PARAMETERS-----------------------
 
@@ -24,13 +26,31 @@
 
 // Offsets - supply your own here (calculate offsets with getOffsets function)
 //     Accelerometer
-#define A_OFF_X 30053.2324
-#define A_OFF_Y 25106.2598
-#define A_OFF_Z 18357.0547
+#define A_OFF_X 31524.5
+#define A_OFF_Y 4671.58
+#define A_OFF_Z -9190.21
 //    Gyroscope
-#define G_OFF_X 39441.2109
-#define G_OFF_Y 26320.0508
-#define G_OFF_Z 43069.8477
+#define G_OFF_X -324.882
+#define G_OFF_Y 132.305
+#define G_OFF_Z 194.692
+
+//-----------------------END MODIFY THESE PARAMETERS-----------------------
+
+#include <fcntl.h>
+#include <iostream>
+#include <sys/ioctl.h>
+#include <sys/types.h>
+#include <time.h>
+#include <unistd.h>
+extern "C" {
+#include <linux/i2c-dev.h>
+}
+#include <cmath>
+#include <thread>
+#include <wiringPi.h>
+#include <wiringPiI2C.h>
+
+#define _POSIX_C_SOURCE 200809L // Used for calculating time
 
 #define TAU 0.05                 // Complementary filter percentage
 #define RAD_T_DEG 57.29577951308 // Radians to degrees (180/PI)
@@ -66,40 +86,10 @@
 #endif
 #undef ACCEL_RANGE
 
-#include <cmath>
-#include <iostream>
-#include <thread>
-#include <wiringPiI2C.h>
-
-// I2C-Adresse des MPU6050
-#define MPU6050_ADDR 0x68
-
-// MPU6050-Register für Beschleunigungswerte
-#define MPU6050_ACCEL_XOUT_H 0x3B
-#define MPU6050_ACCEL_XOUT_L 0x3C
-#define MPU6050_ACCEL_YOUT_H 0x3D
-#define MPU6050_ACCEL_YOUT_L 0x3E
-#define MPU6050_ACCEL_ZOUT_H 0x3F
-#define MPU6050_ACCEL_ZOUT_L 0x40
-
-#define MPU6050_GYRO_XOUT_H 0x43
-#define MPU6050_GYRO_XOUT_L 0x44
-#define MPU6050_GYRO_YOUT_H 0x45
-#define MPU6050_GYRO_YOUT_L 0x46
-#define MPU6050_GYRO_ZOUT_H 0x47
-#define MPU6050_GYRO_ZOUT_L 0x48
-
-// MPU6050 register addresses for configuration
-#define MPU6050_PWR_MGMT_1 0x6B
-#define MPU6050_CONFIG 0x1A
-#define MPU6050_GYRO_CONFIG 0x1B
-#define MPU6050_ACCEL_CONFIG 0x1C
-
-class MPU6050Driver {
+class MPU6050 {
   private:
     void _update();
 
-    int _i2c_fd;
     float _accel_angle[3];
     float _gyro_angle[3];
     float _angle[3]; // Store all angles (accel roll, accel pitch, accel yaw,
@@ -109,39 +99,18 @@ class MPU6050Driver {
     float ax, ay, az, gr, gp,
         gy; // Temporary storage variables used in _update()
 
+    int MPU6050_addr;
+    int f_dev; // Device file
+
     float dt; // Loop time (recalculated with each loop)
 
     struct timespec start, end; // Create a time structure
 
     bool _first_run = 1; // Variable for whether to set gyro angle to
                          // acceleration angle in compFilter
-
   public:
-    MPU6050Driver() {
-        // Initialisierung der I2C-Verbindung zum MPU6050
-        _i2c_fd = wiringPiI2CSetup(MPU6050_ADDR);
-        // Configure power management
-        wiringPiI2CWriteReg8(_i2c_fd, MPU6050_PWR_MGMT_1, 0x00);
-
-        // Configure gyro and accelerometer settings
-        wiringPiI2CWriteReg8(_i2c_fd, MPU6050_CONFIG, 0x00);
-
-        wiringPiI2CWriteReg8(_i2c_fd, MPU6050_GYRO_CONFIG, GYRO_CONFIG);
-        wiringPiI2CWriteReg8(_i2c_fd, MPU6050_ACCEL_CONFIG, ACCEL_CONFIG);
-
-        dt = 0.009;     // Loop time (recalculated with each loop)
-        _first_run = 1; // Variable for whether to set gyro angle to
-                        // acceleration angle in compFilter
-        calc_yaw = false;
-
-        bool run_update_thread = true;
-        if (run_update_thread) {
-            std::thread(&MPU6050Driver::_update, this)
-                .detach(); // Create a seperate thread, for the update routine
-                           // to run in the background, and detach it, allowing
-                           // the program to continue
-        }
-    }
+    MPU6050(int8_t addr);
+    MPU6050(int8_t addr, bool run_update_thread);
     void getAccelRaw(float *x, float *y, float *z);
     void getGyroRaw(float *roll, float *pitch, float *yaw);
     void getAccel(float *x, float *y, float *z);
@@ -149,6 +118,5 @@ class MPU6050Driver {
     void getOffsets(float *ax_off, float *ay_off, float *az_off, float *gr_off,
                     float *gp_off, float *gy_off);
     int getAngle(int axis, float *result);
-
     bool calc_yaw;
 };
