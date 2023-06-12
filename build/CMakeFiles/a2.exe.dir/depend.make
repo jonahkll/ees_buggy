@@ -27,6 +27,7 @@ CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o: ../include/adafruit-motor-hat-cpp-
 CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o: ../include/adafruit-motor-hat-cpp-library/i2cdevice.h
 CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o: ../include/adafruit-motor-hat-cpp-library/pwm.h
 CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o: ../include/buggy_driver.h
+CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o: ../include/mpu6050_driver.h
 CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o: ../src/buggy_driver.cpp
 
 CMakeFiles/a2.exe.dir/src/main_a2.cpp.o: ../include/adafruit-motor-hat-cpp-library/adafruitdcmotor.h
@@ -34,5 +35,9 @@ CMakeFiles/a2.exe.dir/src/main_a2.cpp.o: ../include/adafruit-motor-hat-cpp-libra
 CMakeFiles/a2.exe.dir/src/main_a2.cpp.o: ../include/adafruit-motor-hat-cpp-library/i2cdevice.h
 CMakeFiles/a2.exe.dir/src/main_a2.cpp.o: ../include/adafruit-motor-hat-cpp-library/pwm.h
 CMakeFiles/a2.exe.dir/src/main_a2.cpp.o: ../include/buggy_driver.h
+CMakeFiles/a2.exe.dir/src/main_a2.cpp.o: ../include/mpu6050_driver.h
 CMakeFiles/a2.exe.dir/src/main_a2.cpp.o: ../src/main_a2.cpp
+
+CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.o: ../include/mpu6050_driver.h
+CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.o: ../src/mpu6050_driver.cpp
 

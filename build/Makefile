@@ -155,6 +155,19 @@ a2.exe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/build
 .PHONY : a2.exe/fast
 
+#=============================================================================
+# Target rules for targets named a1.exe
+
+# Build rule for target.
+a1.exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 a1.exe
+.PHONY : a1.exe
+
+# fast build rule for target.
+a1.exe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/build
+.PHONY : a1.exe/fast
+
 src/adafruit-motor-hat-cpp-library/adafruitdcmotor.o: src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.o
 
 .PHONY : src/adafruit-motor-hat-cpp-library/adafruitdcmotor.o
@@ -163,6 +176,7 @@ src/adafruit-motor-hat-cpp-library/adafruitdcmotor.o: src/adafruit-motor-hat-cpp
 src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.o
 .PHONY : src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.o
 
 src/adafruit-motor-hat-cpp-library/adafruitdcmotor.i: src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.i
@@ -173,6 +187,7 @@ src/adafruit-motor-hat-cpp-library/adafruitdcmotor.i: src/adafruit-motor-hat-cpp
 src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.i
 .PHONY : src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.i
 
 src/adafruit-motor-hat-cpp-library/adafruitdcmotor.s: src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.s
@@ -183,6 +198,7 @@ src/adafruit-motor-hat-cpp-library/adafruitdcmotor.s: src/adafruit-motor-hat-cpp
 src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.s
 .PHONY : src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.s
 
 src/adafruit-motor-hat-cpp-library/adafruitmotorhat.o: src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.o
@@ -193,6 +209,7 @@ src/adafruit-motor-hat-cpp-library/adafruitmotorhat.o: src/adafruit-motor-hat-cp
 src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.o
 .PHONY : src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.o
 
 src/adafruit-motor-hat-cpp-library/adafruitmotorhat.i: src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.i
@@ -203,6 +220,7 @@ src/adafruit-motor-hat-cpp-library/adafruitmotorhat.i: src/adafruit-motor-hat-cp
 src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.i
 .PHONY : src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.i
 
 src/adafruit-motor-hat-cpp-library/adafruitmotorhat.s: src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.s
@@ -213,6 +231,7 @@ src/adafruit-motor-hat-cpp-library/adafruitmotorhat.s: src/adafruit-motor-hat-cp
 src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.s
 .PHONY : src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.s
 
 src/adafruit-motor-hat-cpp-library/i2cdevice.o: src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o
@@ -223,6 +242,7 @@ src/adafruit-motor-hat-cpp-library/i2cdevice.o: src/adafruit-motor-hat-cpp-libra
 src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o
 .PHONY : src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o
 
 src/adafruit-motor-hat-cpp-library/i2cdevice.i: src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.i
@@ -233,6 +253,7 @@ src/adafruit-motor-hat-cpp-library/i2cdevice.i: src/adafruit-motor-hat-cpp-libra
 src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.i
 .PHONY : src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.i
 
 src/adafruit-motor-hat-cpp-library/i2cdevice.s: src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.s
@@ -243,6 +264,7 @@ src/adafruit-motor-hat-cpp-library/i2cdevice.s: src/adafruit-motor-hat-cpp-libra
 src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.s
 .PHONY : src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.s
 
 src/adafruit-motor-hat-cpp-library/pwm.o: src/adafruit-motor-hat-cpp-library/pwm.cpp.o
@@ -253,6 +275,7 @@ src/adafruit-motor-hat-cpp-library/pwm.o: src/adafruit-motor-hat-cpp-library/pwm
 src/adafruit-motor-hat-cpp-library/pwm.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.o
 .PHONY : src/adafruit-motor-hat-cpp-library/pwm.cpp.o
 
 src/adafruit-motor-hat-cpp-library/pwm.i: src/adafruit-motor-hat-cpp-library/pwm.cpp.i
@@ -263,6 +286,7 @@ src/adafruit-motor-hat-cpp-library/pwm.i: src/adafruit-motor-hat-cpp-library/pwm
 src/adafruit-motor-hat-cpp-library/pwm.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.i
 .PHONY : src/adafruit-motor-hat-cpp-library/pwm.cpp.i
 
 src/adafruit-motor-hat-cpp-library/pwm.s: src/adafruit-motor-hat-cpp-library/pwm.cpp.s
@@ -273,6 +297,7 @@ src/adafruit-motor-hat-cpp-library/pwm.s: src/adafruit-motor-hat-cpp-library/pwm
 src/adafruit-motor-hat-cpp-library/pwm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.s
 .PHONY : src/adafruit-motor-hat-cpp-library/pwm.cpp.s
 
 src/buggy_driver.o: src/buggy_driver.cpp.o
@@ -283,6 +308,7 @@ src/buggy_driver.o: src/buggy_driver.cpp.o
 src/buggy_driver.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/buggy_driver.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/buggy_driver.cpp.o
 .PHONY : src/buggy_driver.cpp.o
 
 src/buggy_driver.i: src/buggy_driver.cpp.i
@@ -293,6 +319,7 @@ src/buggy_driver.i: src/buggy_driver.cpp.i
 src/buggy_driver.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/buggy_driver.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/buggy_driver.cpp.i
 .PHONY : src/buggy_driver.cpp.i
 
 src/buggy_driver.s: src/buggy_driver.cpp.s
@@ -303,7 +330,35 @@ src/buggy_driver.s: src/buggy_driver.cpp.s
 src/buggy_driver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/buggy_driver.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/buggy_driver.cpp.s
 .PHONY : src/buggy_driver.cpp.s
+
+src/main_a1.o: src/main_a1.cpp.o
+
+.PHONY : src/main_a1.o
+
+# target to build an object file
+src/main_a1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/main_a1.cpp.o
+.PHONY : src/main_a1.cpp.o
+
+src/main_a1.i: src/main_a1.cpp.i
+
+.PHONY : src/main_a1.i
+
+# target to preprocess a source file
+src/main_a1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/main_a1.cpp.i
+.PHONY : src/main_a1.cpp.i
+
+src/main_a1.s: src/main_a1.cpp.s
+
+.PHONY : src/main_a1.s
+
+# target to generate assembly for a file
+src/main_a1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/main_a1.cpp.s
+.PHONY : src/main_a1.cpp.s
 
 src/main_a2.o: src/main_a2.cpp.o
 
@@ -366,6 +421,8 @@ src/mpu6050_driver.o: src/mpu6050_driver.cpp.o
 # target to build an object file
 src/mpu6050_driver.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/mpu6050_driver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/mpu6050_driver.cpp.o
 .PHONY : src/mpu6050_driver.cpp.o
 
 src/mpu6050_driver.i: src/mpu6050_driver.cpp.i
@@ -375,6 +432,8 @@ src/mpu6050_driver.i: src/mpu6050_driver.cpp.i
 # target to preprocess a source file
 src/mpu6050_driver.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/mpu6050_driver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/mpu6050_driver.cpp.i
 .PHONY : src/mpu6050_driver.cpp.i
 
 src/mpu6050_driver.s: src/mpu6050_driver.cpp.s
@@ -384,6 +443,8 @@ src/mpu6050_driver.s: src/mpu6050_driver.cpp.s
 # target to generate assembly for a file
 src/mpu6050_driver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/src/mpu6050_driver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/src/mpu6050_driver.cpp.s
 .PHONY : src/mpu6050_driver.cpp.s
 
 # Help Target
@@ -394,6 +455,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... a1.exe"
 	@echo "... a2.exe"
 	@echo "... a3.exe"
 	@echo "... src/adafruit-motor-hat-cpp-library/adafruitdcmotor.o"
@@ -411,6 +473,9 @@ help:
 	@echo "... src/buggy_driver.o"
 	@echo "... src/buggy_driver.i"
 	@echo "... src/buggy_driver.s"
+	@echo "... src/main_a1.o"
+	@echo "... src/main_a1.i"
+	@echo "... src/main_a1.s"
 	@echo "... src/main_a2.o"
 	@echo "... src/main_a2.i"
 	@echo "... src/main_a2.s"

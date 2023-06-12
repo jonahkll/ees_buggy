@@ -1,6 +1,10 @@
-#pragma once
+// buggy_driver.h
+
+#ifndef BUGGY_DRIVER_H // Include guard start
+#define BUGGY_DRIVER_H
 
 #include "adafruitmotorhat.h"
+#include "mpu6050_driver.h"
 #include <iostream>
 #include <wiringPi.h>
 
@@ -11,6 +15,8 @@ void turnLeft(int speed);
 void turnRight(int speed);
 void stopMotors();
 
+void driveStraight(MPU6050 *device);
+
 // Funktionen der LED
 void turnLEDON(int led);
 void turnLEDOFF(int led);
@@ -20,4 +26,4 @@ double measureDistance(int trigger, int echo);
 bool checkForObstacle(int distance, int trigger, int echo, int led);
 void avoidObstacle(double distance, int trigger, int echo, int led);
 
-// Funktionen des MPU6050
+#endif // Include guard end

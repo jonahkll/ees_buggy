@@ -27,6 +27,7 @@ CMakeFiles/a3.exe.dir/src/buggy_driver.cpp.o: ../include/adafruit-motor-hat-cpp-
 CMakeFiles/a3.exe.dir/src/buggy_driver.cpp.o: ../include/adafruit-motor-hat-cpp-library/i2cdevice.h
 CMakeFiles/a3.exe.dir/src/buggy_driver.cpp.o: ../include/adafruit-motor-hat-cpp-library/pwm.h
 CMakeFiles/a3.exe.dir/src/buggy_driver.cpp.o: ../include/buggy_driver.h
+CMakeFiles/a3.exe.dir/src/buggy_driver.cpp.o: ../include/mpu6050_driver.h
 CMakeFiles/a3.exe.dir/src/buggy_driver.cpp.o: ../src/buggy_driver.cpp
 
 CMakeFiles/a3.exe.dir/src/main_a3.cpp.o: ../include/adafruit-motor-hat-cpp-library/adafruitdcmotor.h

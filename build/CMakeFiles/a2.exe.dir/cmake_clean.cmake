@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.o"
   "CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o"
   "CMakeFiles/a2.exe.dir/src/main_a2.cpp.o"
+  "CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.o"
   "a2.exe"
   "a2.exe.pdb"
 )

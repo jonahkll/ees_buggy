@@ -31,6 +31,8 @@ i2cdevice.h
 ../include/buggy_driver.h
 adafruitmotorhat.h
 ../include/adafruitmotorhat.h
+mpu6050_driver.h
+../include/mpu6050_driver.h
 iostream
 -
 wiringPi.h

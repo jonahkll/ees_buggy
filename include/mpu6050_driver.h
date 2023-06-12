@@ -1,9 +1,11 @@
+#ifndef MPU6050_DRIVER_H // Include guard start
+#define MPU6050_DRIVER_H
+
 //-------------------------------MPU6050 Accelerometer and Gyroscope C++
 // library----------------------------- Copyright (c) 2019, Alex Mous Licensed
 // under the CC BY-NC SA 4.0
 
 //-----------------------MODIFY THESE PARAMETERS-----------------------
-
 #define GYRO_RANGE                                                             \
     0 // Select which gyroscope range to use (see the table below) - Default is
       // 0
@@ -26,13 +28,13 @@
 
 // Offsets - supply your own here (calculate offsets with getOffsets function)
 //     Accelerometer
-#define A_OFF_X 31524.5
-#define A_OFF_Y 4671.58
-#define A_OFF_Z -9190.21
+#define A_OFF_X 31639.8
+#define A_OFF_Y 4763
+#define A_OFF_Z -9266.69
 //    Gyroscope
-#define G_OFF_X -324.882
-#define G_OFF_Y 132.305
-#define G_OFF_Z 194.692
+#define G_OFF_X -336.714
+#define G_OFF_Y 125.472
+#define G_OFF_Z 193.305
 
 //-----------------------END MODIFY THESE PARAMETERS-----------------------
 
@@ -120,3 +122,4 @@ class MPU6050 {
     int getAngle(int axis, float *result);
     bool calc_yaw;
 };
+#endif // Include guard end

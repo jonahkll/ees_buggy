@@ -1,17 +1,29 @@
 cmake_minimum_required(VERSION 3.12)
 project(buggy)
 
+#set(CMAKE_CXX_COMPILER "/usr/bin/arm-linux-gnueabihf-g++")
+set(CMAKE_CXX_COMPILER "/usr/bin/g++")
+
 # Set C++ standard
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
 # Include directories
 include_directories(include)
 include_directories(include/adafruit-motor-hat-cpp-library)
 
 # Source files
+file(GLOB_RECURSE SOURCES_A1
+    src/main_a1.cpp
+    src/buggy_driver.cpp
+    src/mpu6050_driver.cpp
+    src/adafruit-motor-hat-cpp-library/*.cpp
+)
+
+
 file(GLOB_RECURSE SOURCES_A2
     src/main_a2.cpp
     src/buggy_driver.cpp
+    src/mpu6050_driver.cpp
     src/adafruit-motor-hat-cpp-library/*.cpp
 )
 
@@ -41,11 +53,13 @@ find_library(WIRINGPI_LIB wiringPi)
 find_library(PTHREAD_LIB pthread)
 
 # Add executable
+add_executable(a1.exe ${SOURCES_A1})
 add_executable(a2.exe ${SOURCES_A2})
 add_executable(a3.exe ${SOURCES_A3})
 
 
 # Link external libraries
+target_link_libraries(a1.exe ${WIRINGPI_LIB} ${PTHREAD_LIB})
 target_link_libraries(a2.exe ${WIRINGPI_LIB} ${PTHREAD_LIB})
 target_link_libraries(a3.exe ${WIRINGPI_LIB} ${PTHREAD_LIB})
 

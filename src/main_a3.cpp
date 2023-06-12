@@ -69,29 +69,29 @@ int main() {
     device.calc_yaw = true;
 
     while (1) {
+        // driveForward(1);
+        driveStraight(&device);
+        // while (1) {
+        //     // Get the current accelerometer values
+        //     device.getAccel(&ax, &ay, &az);
+        //     std::cout << "Accelerometer Readings: X: " << ax << ", Y: " << ay
+        //               << ", Z: " << az << "\n";
 
-        driveForward(100);
-        while (1) {
-            // Get the current accelerometer values
-            device.getAccel(&ax, &ay, &az);
-            std::cout << "Accelerometer Readings: X: " << ax << ", Y: " << ay
-                      << ", Z: " << az << "\n";
+        //     // Get the current gyroscope values
+        //     device.getGyro(&gr, &gp, &gy);
+        //     std::cout << "Gyroscope Readings: X: " << gr << ", Y: " << gp
+        //               << ", Z: " << gy << "\n";
 
-            // Get the current gyroscope values
-            device.getGyro(&gr, &gp, &gy);
-            std::cout << "Gyroscope Readings: X: " << gr << ", Y: " << gp
-                      << ", Z: " << gy << "\n";
+        //     device.getAngle(0, &gr);
+        //     device.getAngle(1, &gp);
+        //     device.getAngle(2, &gy);
+        //     std::cout << "Current angle around the roll axis: " << gr <<
+        //     "\n"; std::cout << "Current angle around the pitch axis: " << gp
+        //     << "\n"; std::cout << "Current angle around the yaw axis: " << gy
+        //     << "\n"; usleep(250000); // 0.25sec
 
-            device.getAngle(0, &gr);
-            device.getAngle(1, &gp);
-            device.getAngle(2, &gy);
-            std::cout << "Current angle around the roll axis: " << gr << "\n";
-            std::cout << "Current angle around the pitch axis: " << gp << "\n";
-            std::cout << "Current angle around the yaw axis: " << gy << "\n";
-            usleep(250000); // 0.25sec
-
-            delay(1000);
-        }
+        //     delay(1000);
+        // }
     }
 
     return 0;

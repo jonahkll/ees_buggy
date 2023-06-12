@@ -79,80 +79,93 @@ include CMakeFiles/a2.exe.dir/flags.make
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.o: CMakeFiles/a2.exe.dir/flags.make
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.o: ../src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/buggy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp
 
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp > CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp > CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.i
 
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.s
 
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.o: CMakeFiles/a2.exe.dir/flags.make
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.o: ../src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/buggy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp
 
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp > CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp > CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.i
 
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.s
 
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o: CMakeFiles/a2.exe.dir/flags.make
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o: ../src/adafruit-motor-hat-cpp-library/i2cdevice.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/buggy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp
 
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/buggy/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp > CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/buggy/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp > CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.i
 
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/buggy/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/buggy/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.s
 
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.o: CMakeFiles/a2.exe.dir/flags.make
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.o: ../src/adafruit-motor-hat-cpp-library/pwm.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/buggy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/pwm.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/pwm.cpp
 
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/buggy/src/adafruit-motor-hat-cpp-library/pwm.cpp > CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/buggy/src/adafruit-motor-hat-cpp-library/pwm.cpp > CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.i
 
 CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/buggy/src/adafruit-motor-hat-cpp-library/pwm.cpp -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/buggy/src/adafruit-motor-hat-cpp-library/pwm.cpp -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.s
 
 CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o: CMakeFiles/a2.exe.dir/flags.make
 CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o: ../src/buggy_driver.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/buggy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o -c /home/pi/buggy/src/buggy_driver.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o -c /home/pi/buggy/src/buggy_driver.cpp
 
 CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/buggy/src/buggy_driver.cpp > CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/buggy/src/buggy_driver.cpp > CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.i
 
 CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/buggy/src/buggy_driver.cpp -o CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/buggy/src/buggy_driver.cpp -o CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.s
 
 CMakeFiles/a2.exe.dir/src/main_a2.cpp.o: CMakeFiles/a2.exe.dir/flags.make
 CMakeFiles/a2.exe.dir/src/main_a2.cpp.o: ../src/main_a2.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/buggy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/a2.exe.dir/src/main_a2.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a2.exe.dir/src/main_a2.cpp.o -c /home/pi/buggy/src/main_a2.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a2.exe.dir/src/main_a2.cpp.o -c /home/pi/buggy/src/main_a2.cpp
 
 CMakeFiles/a2.exe.dir/src/main_a2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a2.exe.dir/src/main_a2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/buggy/src/main_a2.cpp > CMakeFiles/a2.exe.dir/src/main_a2.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/buggy/src/main_a2.cpp > CMakeFiles/a2.exe.dir/src/main_a2.cpp.i
 
 CMakeFiles/a2.exe.dir/src/main_a2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a2.exe.dir/src/main_a2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/buggy/src/main_a2.cpp -o CMakeFiles/a2.exe.dir/src/main_a2.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/buggy/src/main_a2.cpp -o CMakeFiles/a2.exe.dir/src/main_a2.cpp.s
+
+CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.o: CMakeFiles/a2.exe.dir/flags.make
+CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.o: ../src/mpu6050_driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/buggy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.o -c /home/pi/buggy/src/mpu6050_driver.cpp
+
+CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/buggy/src/mpu6050_driver.cpp > CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.i
+
+CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/buggy/src/mpu6050_driver.cpp -o CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.s
 
 # Object files for target a2.exe
 a2_exe_OBJECTS = \
@@ -161,7 +174,8 @@ a2_exe_OBJECTS = \
 "CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o" \
 "CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.o" \
 "CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o" \
-"CMakeFiles/a2.exe.dir/src/main_a2.cpp.o"
+"CMakeFiles/a2.exe.dir/src/main_a2.cpp.o" \
+"CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.o"
 
 # External object files for target a2.exe
 a2_exe_EXTERNAL_OBJECTS =
@@ -172,11 +186,12 @@ a2.exe: CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o
 a2.exe: CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.o
 a2.exe: CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o
 a2.exe: CMakeFiles/a2.exe.dir/src/main_a2.cpp.o
+a2.exe: CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.o
 a2.exe: CMakeFiles/a2.exe.dir/build.make
 a2.exe: /usr/local/lib/libwiringPi.so
 a2.exe: /usr/lib/arm-linux-gnueabihf/libpthread.so
 a2.exe: CMakeFiles/a2.exe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/buggy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable a2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/buggy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable a2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/a2.exe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

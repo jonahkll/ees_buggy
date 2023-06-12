@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/pi/buggy/src/adafruit-motor-hat-cpp-library/pwm.cpp" "/home/pi/buggy/build/CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.o"
   "/home/pi/buggy/src/buggy_driver.cpp" "/home/pi/buggy/build/CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o"
   "/home/pi/buggy/src/main_a2.cpp" "/home/pi/buggy/build/CMakeFiles/a2.exe.dir/src/main_a2.cpp.o"
+  "/home/pi/buggy/src/mpu6050_driver.cpp" "/home/pi/buggy/build/CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

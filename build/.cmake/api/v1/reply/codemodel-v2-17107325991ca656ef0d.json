@@ -1,0 +1,77 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "buggy",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "a1.exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-a1.exe-Debug-34cca2ea08f1c6c98a6e.json",
+					"name" : "a1.exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "a2.exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-a2.exe-Debug-3b39895a9447e284ec07.json",
+					"name" : "a2.exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "a3.exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-a3.exe-Debug-7472aefc7ae879a9ca06.json",
+					"name" : "a3.exe",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/pi/buggy/build",
+		"source" : "/home/pi/buggy"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

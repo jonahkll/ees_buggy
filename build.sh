@@ -1,3 +1,4 @@
+mkdir build
 cd ~/buggy/build
 cmake ..
 cmake --build .

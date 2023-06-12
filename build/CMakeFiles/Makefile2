@@ -74,6 +74,7 @@ CMAKE_BINARY_DIR = /home/pi/buggy/build
 # The main recursive "all" target.
 all: CMakeFiles/a3.exe.dir/all
 all: CMakeFiles/a2.exe.dir/all
+all: CMakeFiles/a1.exe.dir/all
 
 .PHONY : all
 
@@ -85,6 +86,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/a3.exe.dir/clean
 clean: CMakeFiles/a2.exe.dir/clean
+clean: CMakeFiles/a1.exe.dir/clean
 
 .PHONY : clean
 
@@ -95,7 +97,7 @@ clean: CMakeFiles/a2.exe.dir/clean
 CMakeFiles/a3.exe.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a3.exe.dir/build.make CMakeFiles/a3.exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/buggy/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15 "Built target a3.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/buggy/build/CMakeFiles --progress-num=17,18,19,20,21,22,23,24 "Built target a3.exe"
 .PHONY : CMakeFiles/a3.exe.dir/all
 
 # Build rule for subdir invocation for target.
@@ -122,12 +124,12 @@ CMakeFiles/a3.exe.dir/clean:
 CMakeFiles/a2.exe.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/buggy/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target a2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/buggy/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16 "Built target a2.exe"
 .PHONY : CMakeFiles/a2.exe.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/a2.exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/buggy/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/buggy/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/a2.exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/buggy/build/CMakeFiles 0
 .PHONY : CMakeFiles/a2.exe.dir/rule
@@ -141,6 +143,33 @@ a2.exe: CMakeFiles/a2.exe.dir/rule
 CMakeFiles/a2.exe.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a2.exe.dir/build.make CMakeFiles/a2.exe.dir/clean
 .PHONY : CMakeFiles/a2.exe.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/a1.exe.dir
+
+# All Build rule for target.
+CMakeFiles/a1.exe.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/buggy/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target a1.exe"
+.PHONY : CMakeFiles/a1.exe.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/a1.exe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/buggy/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/a1.exe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/buggy/build/CMakeFiles 0
+.PHONY : CMakeFiles/a1.exe.dir/rule
+
+# Convenience name for target.
+a1.exe: CMakeFiles/a1.exe.dir/rule
+
+.PHONY : a1.exe
+
+# clean rule for target.
+CMakeFiles/a1.exe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a1.exe.dir/build.make CMakeFiles/a1.exe.dir/clean
+.PHONY : CMakeFiles/a1.exe.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

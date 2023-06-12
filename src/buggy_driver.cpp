@@ -10,6 +10,8 @@ std::shared_ptr<AdafruitDCMotor> motorRight = motorHat.getMotor(4);
 
 // Buggy fährt vorwärts
 void driveForward(int speed) {
+    // const gy_origin
+
     motorLeft->setSpeed(speed);
     motorRight->setSpeed(speed);
     motorLeft->run(AdafruitDCMotor::kForward);
@@ -116,5 +118,52 @@ void avoidObstacle(double distance, int trigger, int echo, int led) {
             return;
         }
         delay(20);
+    }
+}
+
+void driveStraight(MPU6050 *device) {
+    float gy_start = 0.00;
+    device->getAngle(2, &gy_start);
+    std::cout << "gy_start: " << gy_start << std::endl;
+
+    driveForward(100);
+
+    float gy_after = 0.00;
+    device->getAngle(2, &gy_after);
+    std::cout << "gy_after: " << gy_after << std::endl;
+
+    std::cout << "gy_after - gy_start: " << gy_after - gy_start << std::endl;
+    if (gy_after - gy_start > 0.03) {
+        std::cout << "to right" << std::endl;
+        std::cout << "dz_at_start: " << gy_after - gy_start << std::endl;
+
+        while (gy_after - gy_start > 0.03) {
+            turnRight(100);
+            device->getAngle(2, &gy_after);
+            std::cout << "gy_after - gy_start in loop: " << gy_after - gy_start
+                      << std::endl;
+        }
+
+        device->getAngle(2, &gy_after);
+        std::cout << "dz_after_correct: " << gy_after - gy_start << std::endl;
+
+        return;
+    } else if (gy_after - gy_start < -0.03) {
+        std::cout << "to left" << std::endl;
+        std::cout << "dz_at_start: " << gy_after - gy_start << std::endl;
+
+        while (gy_after - gy_start < -0.03) {
+            turnLeft(100);
+            device->getAngle(2, &gy_after);
+            std::cout << "gy_after: " << gy_after << std::endl;
+            std::cout << "gy_start: " << gy_start << std::endl;
+            std::cout << "gy_after - gy_start in loop: " << gy_after - gy_start
+                      << std::endl;
+        }
+
+        device->getAngle(2, &gy_after);
+        std::cout << "dz_after_correct: " << gy_after - gy_start << std::endl;
+
+        return;
     }
 }

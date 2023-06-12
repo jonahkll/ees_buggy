@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "CMake",
+            "intelliSenseMode": "linux-gcc-arm64",
+            "cppStandard": "gnu++14",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "compileCommands": "${config:cmake.buildDirectory}/compile_commands.json"
+            // "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

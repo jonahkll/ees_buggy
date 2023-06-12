@@ -1,0 +1,107 @@
+[
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp",
+  "file": "/home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp",
+  "file": "/home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp",
+  "file": "/home/pi/buggy/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a3.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/pwm.cpp",
+  "file": "/home/pi/buggy/src/adafruit-motor-hat-cpp-library/pwm.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a3.exe.dir/src/buggy_driver.cpp.o -c /home/pi/buggy/src/buggy_driver.cpp",
+  "file": "/home/pi/buggy/src/buggy_driver.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a3.exe.dir/src/main_a3.cpp.o -c /home/pi/buggy/src/main_a3.cpp",
+  "file": "/home/pi/buggy/src/main_a3.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a3.exe.dir/src/mpu6050_driver.cpp.o -c /home/pi/buggy/src/mpu6050_driver.cpp",
+  "file": "/home/pi/buggy/src/mpu6050_driver.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp",
+  "file": "/home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp",
+  "file": "/home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp",
+  "file": "/home/pi/buggy/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a2.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/pwm.cpp",
+  "file": "/home/pi/buggy/src/adafruit-motor-hat-cpp-library/pwm.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a2.exe.dir/src/buggy_driver.cpp.o -c /home/pi/buggy/src/buggy_driver.cpp",
+  "file": "/home/pi/buggy/src/buggy_driver.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a2.exe.dir/src/main_a2.cpp.o -c /home/pi/buggy/src/main_a2.cpp",
+  "file": "/home/pi/buggy/src/main_a2.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a2.exe.dir/src/mpu6050_driver.cpp.o -c /home/pi/buggy/src/mpu6050_driver.cpp",
+  "file": "/home/pi/buggy/src/mpu6050_driver.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp",
+  "file": "/home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitdcmotor.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp",
+  "file": "/home/pi/buggy/src/adafruit-motor-hat-cpp-library/adafruitmotorhat.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp",
+  "file": "/home/pi/buggy/src/adafruit-motor-hat-cpp-library/i2cdevice.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a1.exe.dir/src/adafruit-motor-hat-cpp-library/pwm.cpp.o -c /home/pi/buggy/src/adafruit-motor-hat-cpp-library/pwm.cpp",
+  "file": "/home/pi/buggy/src/adafruit-motor-hat-cpp-library/pwm.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a1.exe.dir/src/buggy_driver.cpp.o -c /home/pi/buggy/src/buggy_driver.cpp",
+  "file": "/home/pi/buggy/src/buggy_driver.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a1.exe.dir/src/main_a1.cpp.o -c /home/pi/buggy/src/main_a1.cpp",
+  "file": "/home/pi/buggy/src/main_a1.cpp"
+},
+{
+  "directory": "/home/pi/buggy/build",
+  "command": "/usr/bin/g++  -I/home/pi/buggy/include -I/home/pi/buggy/include/adafruit-motor-hat-cpp-library -g -std=gnu++14 -o CMakeFiles/a1.exe.dir/src/mpu6050_driver.cpp.o -c /home/pi/buggy/src/mpu6050_driver.cpp",
+  "file": "/home/pi/buggy/src/mpu6050_driver.cpp"
+}
+]
