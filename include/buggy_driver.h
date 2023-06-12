@@ -15,7 +15,8 @@ void turnLeft(int speed);
 void turnRight(int speed);
 void stopMotors();
 
-void driveStraight(MPU6050 *device);
+void driveStraight(MPU6050 *device, const float gy_start, int speed);
+void rotate90(MPU6050 *device, const float gy_start, int speed, bool toLeft);
 
 // Funktionen der LED
 void turnLEDON(int led);

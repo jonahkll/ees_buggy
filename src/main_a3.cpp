@@ -67,10 +67,17 @@ int main() {
 
     // Read the current yaw angle
     device.calc_yaw = true;
+    float gy_start = 0.00;
+    device.getAngle(2, &gy_start);
 
+    bool toLeft = 0;
     while (1) {
         // driveForward(1);
-        driveStraight(&device);
+        device.getAngle(2, &gy_start);
+        driveStraight(&device, gy_start, 100);
+        delay(350);
+        stopMotors();
+        rotate90(&device, gy_start, 100, toLeft);
         // while (1) {
         //     // Get the current accelerometer values
         //     device.getAccel(&ax, &ay, &az);

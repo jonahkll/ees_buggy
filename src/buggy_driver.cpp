@@ -28,12 +28,18 @@ void driveBackward(int speed) {
 
 // Buggy macht eine ca 90 Grad Links-Kurve
 void turnLeft(int speed) {
+    motorLeft->setSpeed(0);
+    motorLeft->run(AdafruitDCMotor::kRelease);
+
     motorRight->setSpeed(speed);
     motorRight->run(AdafruitDCMotor::kBackward);
 }
 
 // Buggy macht eine ca 90 Grad Rechts-Kurve
 void turnRight(int speed) {
+    motorRight->setSpeed(0);
+    motorRight->run(AdafruitDCMotor::kRelease);
+
     motorLeft->setSpeed(speed);
     motorLeft->run(AdafruitDCMotor::kForward);
 }
@@ -121,24 +127,37 @@ void avoidObstacle(double distance, int trigger, int echo, int led) {
     }
 }
 
-void driveStraight(MPU6050 *device) {
-    float gy_start = 0.00;
-    device->getAngle(2, &gy_start);
+void leftForward(int speed) {
+    motorLeft->setSpeed(speed);
+    motorLeft->run(AdafruitDCMotor::kForward);
+}
+
+void rightForward(int speed) {
+    motorRight->setSpeed(speed);
+    motorRight->run(AdafruitDCMotor::kBackward);
+}
+
+void driveStraight(MPU6050 *device, const float gy_start, int speed) {
+    // float gy_start = 0.00;
+    // device->getAngle(2, &gy_start);
     std::cout << "gy_start: " << gy_start << std::endl;
 
-    driveForward(100);
+    leftForward(speed);
+    rightForward(speed);
 
     float gy_after = 0.00;
     device->getAngle(2, &gy_after);
     std::cout << "gy_after: " << gy_after << std::endl;
 
     std::cout << "gy_after - gy_start: " << gy_after - gy_start << std::endl;
-    if (gy_after - gy_start > 0.03) {
+    if (gy_after > gy_start) {
         std::cout << "to right" << std::endl;
         std::cout << "dz_at_start: " << gy_after - gy_start << std::endl;
 
-        while (gy_after - gy_start > 0.03) {
-            turnRight(100);
+        while (gy_after > gy_start) {
+            // turnRight(100);
+            leftForward(speed);
+            rightForward(speed - 10);
             device->getAngle(2, &gy_after);
             std::cout << "gy_after - gy_start in loop: " << gy_after - gy_start
                       << std::endl;
@@ -148,12 +167,14 @@ void driveStraight(MPU6050 *device) {
         std::cout << "dz_after_correct: " << gy_after - gy_start << std::endl;
 
         return;
-    } else if (gy_after - gy_start < -0.03) {
+    } else if (gy_after < gy_start) {
         std::cout << "to left" << std::endl;
         std::cout << "dz_at_start: " << gy_after - gy_start << std::endl;
 
-        while (gy_after - gy_start < -0.03) {
-            turnLeft(100);
+        while (gy_after < gy_start) {
+            // turnLeft(100);
+            leftForward(speed - 10);
+            rightForward(speed);
             device->getAngle(2, &gy_after);
             std::cout << "gy_after: " << gy_after << std::endl;
             std::cout << "gy_start: " << gy_start << std::endl;
@@ -166,4 +187,28 @@ void driveStraight(MPU6050 *device) {
 
         return;
     }
+}
+
+void rotate90(MPU6050 *device, const float gy_start, int speed, bool toLeft) {
+    float gy_after = 0.00;
+    if (!toLeft) {
+        while (gy_after - gy_start >= -90.00) {
+            turnRight(speed);
+            device->getAngle(2, &gy_after);
+            std::cout << "gy_after: " << gy_after << std::endl;
+            std::cout << "gy_start: " << gy_start << std::endl;
+            std::cout << "gy_after - gy_start in loop: " << gy_after - gy_start
+                      << std::endl;
+        }
+    } else {
+        while (gy_after - gy_start <= 90.00) {
+            turnLeft(speed);
+            device->getAngle(2, &gy_after);
+            std::cout << "gy_after: " << gy_after << std::endl;
+            std::cout << "gy_start: " << gy_start << std::endl;
+            std::cout << "gy_after - gy_start in loop: " << gy_after - gy_start
+                      << std::endl;
+        }
+    }
+    stopMotors();
 }
